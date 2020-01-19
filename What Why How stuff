@@ -1,0 +1,26 @@
+
+what
+-	Budget tracking web app
+  o	User provide the budget
+  o	There will be categories for what you plan to spend your money on
+  o	User will also self-report spending
+    	Maybe auto-update itself by reading bank statements
+  o	Fun features
+  	Pie graph
+  	Line graph
+  	Achievements and rewards
+  •	Emojis, reskin the website, dollar signs raining down, background music “we’re in the money” will play
+  	A comical amount of statistics
+  	EMAIL WARNINGS when approaching budget
+  	You unlock memes
+Why
+-	We have a very limited income ourselves, so we know the importance of saving money
+  o	Targeting college kids
+    o	Really cringy company memes
+How
+-	Figure out how to make a web-app
+-	Breaking the project up into smaller tasks
+-	Allocating work accordingly and keeping track of how long it takes to do tasks
+  o	Use that to predict time on future sprints and whatever
+-	Webapp
+  o	Java, JavaScript, html
