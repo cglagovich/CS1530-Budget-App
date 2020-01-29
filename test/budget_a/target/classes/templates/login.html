@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Budget login page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h2>Budget</h2>
+    <p></p><br>
+    <div class="add">
+        <h2>register</h2>
+        <form action="/add" method="GET">
+            user name:<input type="text" name="name"><br>
+            email:<input type="text" name="email"><br>
+            password:<input type="password" name="password"><br>
+            <input type="submit" value="register">
+        </form>
+    </div>
+    <div class="login">
+        <h2>login</h2>
+        <form action="/login" method="GET">
+            email:<input type="text" name="email"><br>
+            password:<input type="password" name="password"><br>
+            <input type="submit" value="login">
+        </form>
+    </div>
+</body>
+
+</html>
