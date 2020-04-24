@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+</style>
+</head>
+<body>
+
+<script>
+function Register() 
+{
+	window.open("register.html");
+}
+
+function Login() {
+	var pw= document.getElementById("passw").value;
+	var un= document.getElementById("user").value;
+	//this is just to get a simple working password. will replace if statement with a loop that parses through database of passwords and usernames
+	//will replace alerts with link to home webpage 
+	if (un=="" || pw=="")
+	{
+
+	}
+	else if (un=="5")
+	{
+
+		if (pw == "1")
+		{
+			alert("correct");
+			
+		}
+		else 
+		{
+			alert("wrong username or password")
+		}
+	}
+	else
+	{
+		alert("wrong username or password")
+	}
+}
+//consider wrapping everythinng in form below in div container
+</script>
+
+<center>
+<h2>Login</h2>
+</center>
+<form name = "signIn" >
+    <label for="uname"><b>Username</b></label>
+    <input type="text" name="uname" id= "user" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" name="psw" id = "passw" required>
+
+    <button type="submit" onclick="Login()" >Login</button>
+    
+    <button type="Register" onclick="Register()" >Register</button>
+</form>
+
+</body>
+</html>

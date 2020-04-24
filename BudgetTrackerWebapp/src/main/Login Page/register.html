@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: green;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+</style>
+</head>
+<body>
+<script>
+  var pass= new Array (10);
+  var user = new Array (10);
+function Register() 
+{
+      window.open("login.html");
+}
+
+function Login() {
+  var pw= document.getElementById("passw").value;
+  var un= document.getElementById("userr").value;
+  var flag=0;
+  //if we have a database, I will parse through the database to find if a username already exists
+  if (un=="" || pw=="")
+  {
+
+  }
+  else
+  {
+    alert(user);
+    var i;
+    for (i=0; i<pass.length; i++)
+    {
+      //alert("2");
+      if (un==user[i])
+      {
+        alert("username already exists");
+        flag=-1;
+      }
+    }
+    if (flag!=-1)
+    {
+      var j=0; 
+      //alert("3");
+      while (j<pass.length)
+      {
+        if (user[j]==null || user[j]=="")
+        {
+          user[j]=un;
+          pass[j]=pw;
+          j=pass.length;
+          alert (user);
+          alert("Username and Password added");
+          //window.open("login.html");
+        }
+        j++;
+      }
+    }
+  }
+
+}
+
+function getUser()
+{
+ // alert("works");
+  return user;
+}
+function getPass()
+{
+  return pass;
+}
+
+</script>
+<center>
+<h2>Register</h2>
+</center>
+    <label for="uname"><b>New Username</b></label>
+    <input type="text" name="uname" id= "userr" required>
+
+    <label for="psw"><b>New Password</b></label>
+    <input type="password" name="psw" id = "passw" required>
+
+    <button type="submit" onclick="Login()" >Register</button>
+    
+    <button type="Register" onclick="Register()" >Return to Login Page</button>
+</form>
+
+</body>
+</html>
