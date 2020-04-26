@@ -1,0 +1,8 @@
+To access the EnterBudget page, just relaunch and type in localhost:8080/EnterBudget in the browser, 
+it will take you to the page where you can see the submit button. If you enter the budget name on the first blank, and the 
+amount on the second blank and then hit the submit button underneath, the budget shoudl be added into the database.
+To access the database, go to localhost:8080/h2-console The JDBC url is jdbc:h2:mem:zhiyi  User name: sa  No password
+There is also a page that says Welcome!  It's localhost:8080/home
+The login page is written in html and all the other stuff are written in Java spring. It's inside CS1530-Budget-App/BudgetTrackerWebapp/src/main/Login 
+If there're any problems running them simultaneously, please separate them( all the login code is under the folder Login)
+All the other codes are in java spring. They should work fine individually as presented in the demo.
